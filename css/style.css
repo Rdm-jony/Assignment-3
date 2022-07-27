@@ -1,6 +1,7 @@
 /* fonts link */
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
+
 body {
     font-family: 'Poppins', sans-serif;
 }
@@ -15,4 +16,9 @@ body {
     height: 100%;
     background-color: black;
     opacity: 0.6;
+}
+
+.slide-pre-icon,
+.slide-next-icon {
+    filter: invert(0) !important;
 }
