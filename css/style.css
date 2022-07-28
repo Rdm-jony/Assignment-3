@@ -27,3 +27,11 @@ body {
 .bg-elearning {
     background-color: #F4FAFD;
 }
+
+/* card slide style sheet  */
+.card-slider-pre-icon,
+.card-slider-next-icon {
+    background-color: black;
+}
+
+/* card slide style end  */
