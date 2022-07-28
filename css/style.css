@@ -22,3 +22,8 @@ body {
 .slide-next-icon {
     filter: invert(0) !important;
 }
+
+/* elearning Institute style  */
+.bg-elearning {
+    background-color: #F4FAFD;
+}
