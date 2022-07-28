@@ -34,4 +34,14 @@ body {
     background-color: black;
 }
 
-/* card slide style end  */
+/* all section bottom margin(large) style  */
+header,
+#popular-course-section,
+#elearning-Institute-section,
+#Register-section,
+#success-full-student-section,
+#card-slider,
+#asked-qustion,
+#companies {
+    margin-bottom: 5rem;
+}
