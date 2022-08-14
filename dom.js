@@ -81,3 +81,9 @@ document.getElementById("view-all-btn").addEventListener("click", function (even
     target.appendChild(row);
     event.target.parentNode.removeChild(event.target);
 })
+document.getElementById("read-more-btn").addEventListener("click", function (event) {
+    const readMoreText = document.getElementById("read-more-text");
+    readMoreText.classList.remove("d-none");
+    event.target.parentNode.removeChild(event.target);
+
+})
