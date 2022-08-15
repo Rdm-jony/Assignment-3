@@ -92,22 +92,6 @@ document.getElementById("sign-in-btn").addEventListener("click", function (event
     const pass = document.getElementById("inputPassword3");
     const name = document.getElementById("name1");
 
-    // div.style.width = "40%";
-    // div.style.textAlign = "center";
-    // div.style.position = "fixed";
-    // div.style.top = "50%";
-    // div.style.left = "25%";
-    // div.style.backgroundColor = "black";
-    // div.style.color = "white";
-    // div.style.borderRadius = "10px";
-
-    const b = document.createElement("b");
-    b.innerText = name.value;
-    b.style.display = "block";
-
-    const p = document.createElement("p");
-    p.innerText = email.value;
-
     const gridRadios1 = document.getElementById("gridRadios1");
     const gridRadios2 = document.getElementById("gridRadios2");
     const gridRadios3 = document.getElementById("gridRadios3");
@@ -123,6 +107,6 @@ document.getElementById("sign-in-btn").addEventListener("click", function (event
 
     const gridCheck1 = document.getElementById("gridCheck1");
     if (gridCheck1.checked == true) {
-        alert("Name: " + b.innerText + "\n" + "Email: " + p.innerText + "\n" + "Gender: " + gender);
+        alert("Name: " + name.value + "\n" + "Email: " + email.value + "\n" + "password: " + pass.value + "\n" + "Gender: " + gender);
     }
 })
