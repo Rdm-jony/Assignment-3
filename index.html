@@ -15,11 +15,11 @@
 
 </head>
 
-<body>
+<body id="main-body">
     <!-- header start  -->
     <header>
         <!-- nav start -->
-        <div class="container py-3">
+        <div class="container py-3" id="container-main">
             <nav class="row navbar navbar-expand-lg d-flex justify-content-between">
                 <div class="col-lg-2 col-7">
                     <a class="navbar-brand fw-bolder fs-1" href="#">Pro Edu</a>
@@ -311,7 +311,7 @@
                                 readable content of a page when looking at its layout.</small>
                         </div>
                         <div
-                            class="col-md-4 d-flex align-items-center justify-content-md-end justify-content-center mt-3 mt-lg-0">
+                            class="col-md-4 d-flex align-items-center justify-content-md-end justify-content-center mt-3 mt-lg-0 ">
                             <!-- modal strt -->
                             <button type="button" class="btn btn-light text-primary" data-bs-toggle="modal"
                                 data-bs-target="#exampleModal" data-bs-whatever="@mdo">Register</button>
@@ -326,8 +326,14 @@
                                             <button type="button" class="btn-close" data-bs-dismiss="modal"
                                                 aria-label="Close"></button>
                                         </div>
-                                        <div class="modal-body">
+                                        <div class="modal-body" id="madal-body">
                                             <form>
+                                                <div class="row mb-3">
+                                                    <label for="name1" class="col-sm-2 col-form-label">Name</label>
+                                                    <div class="col-sm-10">
+                                                        <input type="text" class="form-control" id="name1">
+                                                    </div>
+                                                </div>
                                                 <div class="row mb-3">
                                                     <label for="inputEmail3"
                                                         class="col-sm-2 col-form-label">Email</label>
@@ -347,23 +353,22 @@
                                                     <div class="col-sm-10">
                                                         <div class="form-check">
                                                             <input class="form-check-input" type="radio"
-                                                                name="gridRadios" id="gridRadios1" value="option1"
-                                                                checked>
+                                                                name="gridRadios" id="gridRadios1" value="Male" checked>
                                                             <label class="form-check-label" for="gridRadios1">
                                                                 Male
                                                             </label>
                                                         </div>
                                                         <div class="form-check">
                                                             <input class="form-check-input" type="radio"
-                                                                name="gridRadios" id="gridRadios2" value="option2">
+                                                                name="gridRadios" id="gridRadios2" value="Female">
                                                             <label class="form-check-label" for="gridRadios2">
                                                                 Female
                                                             </label>
                                                         </div>
                                                         <div class="form-check">
                                                             <input class="form-check-input" type="radio"
-                                                                name="gridRadios" id="gridRadios2" value="option2">
-                                                            <label class="form-check-label" for="gridRadios2">
+                                                                name="gridRadios" id="gridRadios3" value="Other">
+                                                            <label class="form-check-label" for="gridRadios3">
                                                                 Other
                                                             </label>
                                                         </div>
@@ -379,7 +384,8 @@
                                                     <small>accept the term of service and condition</small>
                                                 </label>
                                             </div>
-                                            <button type="button" class="btn btn-primary">Sign in</button>
+                                            <button id="sign-in-btn" type="button" class="btn btn-primary">Sign
+                                                in</button>
                                         </div>
                                     </div>
                                 </div>
